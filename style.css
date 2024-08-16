@@ -1,0 +1,141 @@
+*{  
+    margin: 0;
+    padding: 0;
+  font-family:'Courier New', Courier, monospace;
+}
+body{
+    
+    background-image:url(image.img/wood-2045380.jpg);
+    background-size: 1230px 610px;
+    text-align: center;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    color: white;
+    text-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.694);
+    height:5rem ;
+    line-height: 5rem;
+    font-size: 4rem;
+    border: 1px solid green;
+    
+}
+.choose{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    flex-direction: column;
+    transform: scale(1.05);
+}
+
+.choose img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    max-width: 100%;
+    
+}
+img:hover{
+ transform: scale(1.05);
+ filter: drop-shadow(1rem 1rem 0.6rem black);
+}
+.choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 2rem;  
+}
+.score-card{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 5rem;
+margin-top: 3rem;
+}
+#user_score,#comp_score{
+    font-size:  3rem; 
+    color: white;
+}
+.msg_container{
+         margin-top: 2.5rem;
+        
+         padding: 1rem;
+        border-radius: 50px;
+        background:#ffef00;
+        font-weight: bolder;
+        color:blue;
+        display: inline-block;
+        
+        
+}
+.loose{
+    box-shadow: 40px  0px 150px rgb(255, 0, 0);
+    background-color :red;
+    color: white;
+
+
+}
+.win{
+    box-shadow: 40px  0px 150px rgb(144, 239, 55);
+    color :black;
+    background-color: greenyellow;
+}
+
+.countDownContainer {
+    height: 100vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.hide{
+    display: none;
+}
+
+.countDown{
+    font-size: 6rem;
+    font-weight: bold;
+    color: yellow;
+    background: #d8dbdf5f;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+}
+
+
+.choose p{
+    margin: 10px 0 0;
+    font-size: 30px;
+    color:white;
+    font-weight: bold;
+}
+
+#btn{
+    font-size: 18px;
+    letter-spacing:2px; ;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border:none;
+    margin-top: 2rem;
+}
+#btn:hover{
+    background-color: aqua;
+    border: none;
+    box-shadow: 40px 0 100px rgba(0, 255, 255, 0.801);
+}
+.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+    
+}

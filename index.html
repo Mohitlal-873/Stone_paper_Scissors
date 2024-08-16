@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Sissor game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="countDownContainer">
+    <div class="countDown"></div>
+    </div>
+<main>
+<div class="choice">
+
+    <div class="choose" id="stone">
+        <img src="image.img/rock.png" alt="stone" >
+        <p>Stone</p>
+
+    </div>
+
+    <div class="choose" id="paper">
+        <img src="image.img/paper_1.png" alt="paper">
+        <p>Paper</p>
+    </div>
+
+    <div class="choose" id="scissors">
+        <img src="image.img/scissors.png" alt="Scissor">
+        <p>scissor</p>
+
+    </div>
+
+</div>
+    
+    <div class="score-card">
+        <div class="score">
+            <p id="user_score">My Score : 0</p>
+        </div>
+        <div class="score">
+            <p id="comp_score">Comp : 0</p>
+        </div>
+    </div>
+    <div class="msg_container">
+        <p id="msg">play your move</p>
+    </div>
+   <center> <button id="btn">newgame</button></center>
+   </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
