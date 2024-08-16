@@ -1,9 +1,6 @@
 let userScore=0;
 let compScore=0;
-
 const choose = document.querySelectorAll(".choose");
-
-
 
 const getCompCoice=()=>
 {
@@ -11,16 +8,13 @@ const getCompCoice=()=>
      let compCoice=Math.floor(Math.random()*3);
      return list[compCoice];
 };
-
-
 choose.forEach((ch)=>
     {
       ch.addEventListener("click",()=>
     {
       clickSound();
      const userChoice=ch.getAttribute("id");
-      playGame(userChoice);
-      
+      playGame(userChoice);  
     });
     });
 const drawGame =()=>
@@ -28,7 +22,6 @@ const drawGame =()=>
     console.log("match is draw");
    msg.innerText=`match is draw`;
 };
-
 const winGame =()=>
 {
     userScore++;
@@ -41,7 +34,6 @@ const computerWin=()=>
     msg.innerText=`Computer win `;
     comp_score.innerText=`Comp : ${compScore}`;
 };
-
 const playGame=(userChoice)=>
 {
   let compChoice=getCompCoice();
@@ -69,7 +61,6 @@ const playGame=(userChoice)=>
     computerWin();
     finalMsg();
   }
- 
 };
 const finalMsg=()=>
 {
@@ -79,8 +70,7 @@ const finalMsg=()=>
     msg_container.classList.add("win");
     msg.innerText=`you won this match`;
     user_score.innerText=`My Score : ${userScore=0}`;
-    comp_score.innerText=`Comp : ${compScore=0}`;
-    
+    comp_score.innerText=`Comp : ${compScore=0}`; 
   winSound();  
   disablediv();
   }
@@ -95,9 +85,7 @@ const finalMsg=()=>
     losesound();
     disablediv();
   }
- 
 };
-
 function disablediv()
 {
   let div =document.querySelectorAll(".choose");
@@ -106,7 +94,6 @@ function disablediv()
     ch.classList.add("disabled");
   }
 };
-
 //countdown
 let cnt =document.querySelector(".countDown");
 let list2 = ["Stone","Paper","Scissors","go!"];
@@ -143,7 +130,6 @@ const losesound=()=>
   console.log("loose play");
   looseAudio.play();
 };
-
 const clickSound=()=>
 {
   console.log("click play");
